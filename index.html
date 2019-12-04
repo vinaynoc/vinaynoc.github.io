@@ -1,5 +1,6 @@
 <html>
  <head>
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link href="https://vision.appreciatehub.com/ui/givewidget/app.bundle.css" rel="stylesheet">
  	<script src="https://vision.appreciatehub.com/ui/givewidget/app.bundle.js"> </script>
 	 <script src="https://vision.appreciatehub.com/ui/givewidget/giveanywhere.js"> </script>
@@ -9,10 +10,14 @@
 	 }
 	 </script>
  	<title>Give Widget Test page</title>
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<style>
+		.appreciate-btn {
+			display: none;
+		}
+	</style>
  </head>
  <body onload="openWidget()">
-	<button id="app">Appreciate</button>
+	<button class="appreciate-btn" id="app">Appreciate</button>
  	<script>
  		initGiveAnywhere('#app', 'https://fs-prod.octanner.com/adfs/ls/IdpInitiatedSignOn.aspx?loginToRp=fed.appreciatehub.com');
  	</script>
